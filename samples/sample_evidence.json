@@ -1,0 +1,23 @@
+[
+  {
+    "control_id": "A.5.15",
+    "provider": "Azure",
+    "status": "partial",
+    "evidence_ref": "entra-id-access-review-sample",
+    "notes": "Access review evidence exists, but periodic review frequency is not yet fully formalised."
+  },
+  {
+    "control_id": "A.8.15",
+    "provider": "AWS",
+    "status": "implemented",
+    "evidence_ref": "cloudtrail-central-logging-sample",
+    "notes": "Centralised audit logging is represented in the sample evidence model."
+  },
+  {
+    "control_id": "A.8.16",
+    "provider": "Azure",
+    "status": "missing",
+    "evidence_ref": "n/a",
+    "notes": "No validated monitoring artefact has yet been attached in this sample dataset."
+  }
+]
