@@ -1,0 +1,17 @@
+[
+  {
+    "control_id": "A.5.15",
+    "title": "Access control",
+    "objective": "Ensure logical access is authorised, reviewed and aligned with business requirements."
+  },
+  {
+    "control_id": "A.8.15",
+    "title": "Logging",
+    "objective": "Ensure events are recorded to support monitoring, investigations and accountability."
+  },
+  {
+    "control_id": "A.8.16",
+    "title": "Monitoring activities",
+    "objective": "Detect anomalous behaviour and suspicious activity through monitoring controls."
+  }
+]
