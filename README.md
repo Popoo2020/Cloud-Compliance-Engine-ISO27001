@@ -8,6 +8,8 @@ It currently includes control templates, a sample multi-cloud evidence dataset, 
 
 > **Status:** working automation baseline / active expansion.
 
+![Compliance reporting flow](assets/compliance-reporting-flow.svg)
+
 ## What is implemented
 
 | Capability | Status |
@@ -101,6 +103,17 @@ This repository demonstrates the first practical layer of compliance engineering
 - creating a report suitable for expansion into audit workflows
 - keeping the logic small enough to review and test
 
+## Portfolio value
+
+The project is particularly relevant for roles that connect:
+
+- cloud security architecture
+- compliance automation
+- security governance engineering
+- evidence collection and auditability
+
+It shows the beginning of a credible **security-control automation** direction rather than a purely theoretical ISO 27001 note collection.
+
 ## Roadmap
 
 1. Add read-only Azure evidence collectors
@@ -109,6 +122,14 @@ This repository demonstrates the first practical layer of compliance engineering
 4. Add policy exception tracking with expiry fields
 5. Generate CSV/JSON outputs in addition to Markdown
 6. Add threat-model and architecture documentation for compliance automation
+
+## Release readiness
+
+A sensible first tagged release would be **`v0.1.0`** once:
+
+- CI is confirmed passing on `main`
+- generated sample reports remain stable
+- README scope remains clear that current inputs are sample evidence, not live cloud inventory
 
 ## Limitations
 
