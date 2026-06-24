@@ -5,6 +5,9 @@ on:
     branches: [main]
   pull_request:
 
+env:
+  PYTHONPATH: ${{ github.workspace }}
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -32,7 +35,15 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest -q
+          pytest -q tests
+
+      - name: Run Bandit SAST
+        run: |
+          bandit -r src -ll
+
+      - name: Audit Python dependencies
+        run: |
+          pip-audit -r requirements.txt
 
       - name: Generate sample ISO 27001 report
         run: |
