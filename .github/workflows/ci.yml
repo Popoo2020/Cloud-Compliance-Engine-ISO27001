@@ -34,6 +34,14 @@ jobs:
         run: |
           pytest -q
 
+      - name: Run Bandit SAST
+        run: |
+          bandit -r src -ll
+
+      - name: Audit Python dependencies
+        run: |
+          pip-audit -r requirements.txt
+
       - name: Generate sample ISO 27001 report
         run: |
           python -m src.report_generator
