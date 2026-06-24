@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, add-qa-security-ops-docs]
   pull_request:
 
 env:
@@ -29,23 +29,6 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements-dev.txt
 
-      - name: Lint Python sources and tests
+      - name: Run full validation
         run: |
-          ruff check src tests
-
-      - name: Run tests
-        run: |
-          pytest -q tests
-
-      - name: Run Bandit SAST
-        run: |
-          bandit -r src -ll
-
-      - name: Audit Python dependencies
-        run: |
-          pip-audit -r requirements.txt
-
-      - name: Generate sample ISO 27001 report
-        run: |
-          python -m src.report_generator
-          test -f samples/generated_report.md
+          make validate
