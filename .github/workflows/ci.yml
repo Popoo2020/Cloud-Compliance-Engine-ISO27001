@@ -2,9 +2,10 @@ name: CI
 
 on:
   push:
-    branches: [main, add-qa-security-ops-docs]
+    branches: [main]
   pull_request:
 
+  
 env:
   PYTHONPATH: ${{ github.workspace }}
 
