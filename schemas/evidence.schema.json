@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cloud Compliance Evidence Records",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "control_id",
+      "provider",
+      "status",
+      "evidence_ref",
+      "evidence_date",
+      "freshness_days",
+      "notes"
+    ],
+    "properties": {
+      "control_id": {"type": "string", "minLength": 1},
+      "provider": {"type": "string", "minLength": 1},
+      "status": {
+        "type": "string",
+        "enum": ["implemented", "partial", "missing", "not_applicable"]
+      },
+      "evidence_ref": {"type": "string", "minLength": 1},
+      "evidence_date": {"type": "string", "format": "date"},
+      "freshness_days": {"type": "integer", "minimum": 1},
+      "notes": {"type": "string"}
+    }
+  }
+}
