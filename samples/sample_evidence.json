@@ -4,6 +4,8 @@
     "provider": "Azure",
     "status": "partial",
     "evidence_ref": "entra-id-access-review-sample",
+    "evidence_date": "2026-05-20",
+    "freshness_days": 90,
     "notes": "Access review evidence exists, but periodic review frequency is not yet fully formalised."
   },
   {
@@ -11,6 +13,8 @@
     "provider": "AWS",
     "status": "implemented",
     "evidence_ref": "cloudtrail-central-logging-sample",
+    "evidence_date": "2026-06-01",
+    "freshness_days": 90,
     "notes": "Centralised audit logging is represented in the sample evidence model."
   },
   {
@@ -18,6 +22,8 @@
     "provider": "Azure",
     "status": "missing",
     "evidence_ref": "n/a",
+    "evidence_date": "2026-01-15",
+    "freshness_days": 90,
     "notes": "No validated monitoring artefact has yet been attached in this sample dataset."
   }
 ]
