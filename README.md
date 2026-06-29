@@ -1,6 +1,7 @@
 # Cloud-Compliance-Engine-ISO27001
 
 [![CI](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001/actions/workflows/ci.yml/badge.svg)](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001/actions/workflows/ci.yml)
+[![Analysis](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001/actions/workflows/analysis.yml/badge.svg)](https://github.com/Popoo2020/Cloud-Compliance-Engine-ISO27001/actions/workflows/analysis.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Cloud-Compliance-Engine-ISO27001** is a small, auditable automation project for turning structured cloud-security evidence into an ISO 27001-oriented compliance summary.  
@@ -27,6 +28,7 @@ It currently includes control templates, a sample multi-cloud evidence dataset, 
 | Markdown report generation | ✅ Implemented |
 | Automated pytest coverage | ✅ Implemented |
 | CI validation + sample report generation | ✅ Implemented |
+| Dedicated analysis workflow with explicit permissions | ✅ Implemented |
 | Live Azure collector | 🟡 Planned |
 | Live AWS collector | 🟡 Planned |
 | Exception lifecycle tracking | 🟡 Planned |
